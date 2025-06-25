@@ -4,14 +4,11 @@ const UserFormData = require("./Controllers/UserController");
 const app = express();
 const cors = require("cors");
 
-// Connect to DB
-connectDB();
-app.use(cors());
-// Middleware to parse JSON from body
-app.use(express.json());
+connectDB(); // Database connect
+app.use(cors()); // CORS allow
+app.use(express.json()); // JSON parser
 
-// Direct POST route using controller
-app.post("/api/form", UserFormData);
+app.post("/api/form", UserFormData); // Route connected
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
