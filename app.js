@@ -1,7 +1,7 @@
 const express = require("express");
 const connectDB = require("./Config/db");
 const UserFormData = require("./Controllers/UserController");
-const ContactForm = require("./Controllers/UserController");
+const ContactForm = require("./Controllers/ContactController");
 const app = express();
 const cors = require("cors");
 

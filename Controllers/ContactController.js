@@ -1,4 +1,4 @@
-const formdata = require("../Models/UserModels");
+const formdata = require("../Models/ContactModel");
 
 const ContactForm = async (req, res) => {
   try {
